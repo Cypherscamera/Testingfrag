@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Lookfrag">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/currentword"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:hint="Current Word"
+        android:textSize="35dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Unscramble the word below"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:hint="Score"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+<Chronometer
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/timer"
+    android:textSize="35dp"
+    android:textStyle="bold"
+    android:layout_gravity="right"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userinput"
+        android:layout_marginTop="140dp"
+        android:textSize="35sp"
+        android:hint="User"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_gravity="bottom"
+        android:text="Skip"
+        android:id="@+id/skip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:id="@+id/submit"
+        android:layout_gravity="bottom"
+        android:text="Submit"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="10dp"/>
+
+</FrameLayout>
